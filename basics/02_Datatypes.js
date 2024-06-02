@@ -17,16 +17,9 @@
 
 
 
-
-
 // JAVACRIPT IS DYNAMICALLY OR STATICALLY TYPED ?
 
 // Dynamically-typed languages are those (like JavaScript) where the interpreter assigns variables a type at runtime based on the variable's value at the time.
-
-
-
-
-
 
 
 
@@ -43,21 +36,21 @@
 
 
 //OBJECTS
-let MyObj = {
-    name : "Abhay",
-    78 : 56,
-    68 : 56,
-    58 : 56 ,
-    name2 : "vaibhav"
-};
-// Integer keys (non-negative integers) are listed in ascending order.
-// String keys and symbol keys follow in the order they were added to the object.
-console.log(MyObj);
+// let MyObj = {
+//     name : "Abhay",
+//     78 : 56,
+//     68 : 56,
+//     58 : 56 ,
+//     name2 : "vaibhav"
+// };
+// // Integer keys (non-negative integers) are listed in ascending order.
+// // String keys and symbol keys follow in the order they were added to the object.
+// console.log(MyObj);
 
 
-const myfunction = function () {
-    console.log("Hello World");
-}
+// const myfunction = function () {
+//     console.log("Hello World");
+// }
 
 
 
