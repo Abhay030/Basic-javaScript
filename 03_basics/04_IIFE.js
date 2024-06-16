@@ -1,6 +1,4 @@
 // An Immediately Invoked Function Expression (IIFE) is a JavaScript function that runs as soon as it is defined. It is a common pattern used to create a new scope and avoid polluting the global scope, among other benefits. Here's a deep dive into IIFEs, including their syntax, features, and usage.
-
-
 // SYNTAX
 (function() {
     // Code to be executed immediately
@@ -23,7 +21,6 @@
     var privateVar = "I am private";
     // console.log(privateVar); // "I am private"
 })();
-
 // console.log(privateVar); // ReferenceError: privateVar is not defined
 
 
@@ -32,7 +29,6 @@
 (function() {
     // console.log("This runs immediately!");
 })();
-
 
 
 /////////////////////////////////////////////
