@@ -36,4 +36,19 @@ const regularuser = {
 // getting keys and values
 // console.log(Object.keys(regularuser));
 // console.log(Object.values(regularuser));
-console.log(regularuser.hasOwnProperty('firstname'));
+// console.log(regularuser.hasOwnProperty('firstname'));
+
+
+
+// DESTRUCTURING OF OBJECTS
+const course = {
+    name : "python",
+    length : "48h",
+    price : "999"
+}
+
+const {name : nm} = course  // bar baar name user karengy to code lengthy ho jaaega issliye isko short me karne ke lute structure kar lete hain
+console.log(nm);
+
+
+
