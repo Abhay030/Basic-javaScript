@@ -14,13 +14,11 @@ function loginuser(username){
 // console.log(loginuser("Abhay"));
 // console.log(loginuser("")); // undefined just logged in 
 
-
 // THIS WILL HELP WHEN WE ARE NOT SURE ABOUT NUMBER OF ARGUMENTS
 function calculateCartPrice(...num1){
     return num1;
 }
 // console.log(calculateCartPrice(100 , 200 , 965 , 987));
-
 
 // EXTRACTING THE INFOS FROM THE OBJECTS
 // const user1 = {
@@ -44,11 +42,14 @@ function calculateCartPrice(...num1){
 // getuserName(user1,user2,user3)
 
 
+// // PASSING ARRAY
+// const arr = [200,300,400,500]
+// function returnsecondvalue(array) {
+//     return array[1];
+// }
+// console.log(returnsecondvalue(arr));
+// console.log(returnsecondvalue([2,33,5,6,78,9]));
 
-// PASSING ARRAY
-const arr = [200,300,400,500]
-function returnsecondvalue(array) {
-    return array[1];
-}
-console.log(returnsecondvalue(arr));
-console.log(returnsecondvalue([2,33,5,6,78,9]));
+
+
+
