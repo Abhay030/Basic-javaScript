@@ -6,10 +6,12 @@
     <title>Document</title>
 </head>
 <style>
+
     .dom{
         text-decoration: dotted;
         color: rgb(3, 7, 6);
     }
+    
 </style>
 <body>
     <div class="dom" id="dom1">
@@ -33,6 +35,10 @@
 <script>
     const parent  = document.querySelector('.dom')
     console.log(parent.children[0]);
+
+    // for (let i = 0; i < array.length; i++) {
+    //     const element = array[i];    
+    // }
     
     Array.from(parent.children).forEach(child => {
         if (child.tagName == 'H3'){
@@ -40,8 +46,25 @@
         }
     });
 
-    console.log(parent.firstElementChild);
-    console.log(parent.nextElementSibling);
+    // console.log(parent.firstElementChild);
+    // console.log(parent.nextElementSibling);
+
+    console.log("Nodes: ", parent.childNodes);
+
+    const div = document.createElement('div')
+    console.log(div);
+
+    div.className = "main"
+    div.id = Math.round(Math.random() *10);
+    
+    div.setAttribute("title" , "generated title")
+    div.style.padding = "12px"
+
+    const addtext = document.createTextNode("Chai Aur Abhay")
+    div.appendChild(addtext);
+
+    document.body.appendChild(div);
+    
     
 </script>
 </html>
