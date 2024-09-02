@@ -1,5 +1,5 @@
-// const user = "" // this is considered as the false value 
-const user = "abhay@gmail.com"  // this is considered as the true value
+const user = "" // this is considered as the false value 
+// const user = "abhay@gmail.com"  // this is considered as the true value
 
 if (user) {
     console.log("Logged in ");
@@ -45,6 +45,7 @@ let val1;
 var1 = undefined ?? 15 // 15
 val1 = null ?? 12 ?? 10 // first ture value is assigned
 console.log(val1);
+console.log(var1);
 
 
 
