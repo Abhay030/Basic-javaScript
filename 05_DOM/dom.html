@@ -30,6 +30,20 @@
         </ul>
     </div> 
 </body>
+<script>
+    const parent  = document.querySelector('.dom')
+    console.log(parent.children[0]);
+    
+    Array.from(parent.children).forEach(child => {
+        if (child.tagName == 'H3'){
+            child.style.color = 'red'
+        }
+    });
+
+    console.log(parent.firstElementChild);
+    console.log(parent.nextElementSibling);
+    
+</script>
 </html>
 
 
