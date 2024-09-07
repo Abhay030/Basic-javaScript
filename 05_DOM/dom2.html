@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: #fff;">
+    <ul class="language">
+        <li>Java Script</li> <!-- Correct tag here -->
+    </ul>
+</body>
+<script>  
+    // Function to add new languages to the list
+    function addlang(langname){
+        const li = document.createElement('li');
+        li.innerHTML = `${langname}`;
+        document.querySelector('.language').appendChild(li);
+    }
+
+    // Example: adding new languages
+    addlang('Python');
+    addlang('Java');
+
+    // Function to update existing <li> element
+    function editelement(){
+        const listItems = document.getElementsByTagName('li');
+        if(listItems.length > 0) {
+            listItems[0].textContent = 'Java';  // Editing the first <li> element
+        }
+    }
+    editelement();  // Calling the function to edit
+
+    //Fuction for removing the <li> element
+    const llang = document.querySelector('li')
+    llang.remove();
+</script>
+</html>
