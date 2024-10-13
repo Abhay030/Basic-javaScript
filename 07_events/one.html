@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="main" style="background-color: #414141;"> 
+    <div >
+        <ul>
+            <li><img width="200px" id="chaiaurcode" src="https://i.ytimg.com/vi/_TjtAyMkiTI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHCVn8bp9TJp-W3XDDRGJUSZ6Hvg" alt=""></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    // document.getElementById('chaiaurcode').onclick = function(){
+    //     alert("who are ypu dawg")
+    // }
+
+    document.getElementById('chaiaurcode').addEventListener('click' , function(){
+        console.log("Who are you Dawg ? ")
+    }, true)
+
+    document.getElementById('main').addEventListener('click' , function(e){
+        console.log("body clicked");
+        e.stopPropagation();
+    }, true)
+    
+    document.getElementById('body').addEventListener('click')
+
+</script>
+</html>
