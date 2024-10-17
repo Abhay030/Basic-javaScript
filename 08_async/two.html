@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayAbhay = function(){
+        console.log("Abhay"); 
+    }
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best js series"
+    }
+
+    const changeMe = setTimeout(changeText,2000)
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED");
+        
+    })
+    
+</script>
+</html>
+
+<!-- setTimeout() ko aise samajh lo ki yeh ek alarm ki tarah kaam 
+ karta hai. Jaise agar tum ek task ko kuch der ke baad run karwana 
+ chahte ho, toh tum setTimeout() ka use kar sakte ho. Yeh function 
+ ko ek specific time ke baad ek baar execute karta hai.
+
+Example:
+Imagine tumhare paas ek website hai, aur tum chahte ho ki 5 seconds 
+ke baad user ko ek welcome message show kare. setTimeout() se tum yeh kar sakte ho. -->
+
+<!-- EXAMPLE -->
+<!-- function welcomeMessage() {
+    console.log("Welcome to the website!");
+}
+
+// Show message after 5 seconds (5000 milliseconds)
+setTimeout(welcomeMessage, 5000); -->
+
+<!-- Use Cases of setTimeout():
+
+Showing messages or notifications after some time delay.
+Delaying animations in UI interactions.
+Simulating delays in operations (like fake loading spinners). -->
+
+
+
+
+<!-- -------------------------------------------------------------- -->
+
+<!-- SET TIME INTERVAL -->
+
+<!-- setInterval() ko tum aise samajh sakte ho ki yeh ek looping 
+alarm ki tarah kaam karta hai. Har baar jab specified time pass
+ hota hai, yeh function ko execute karta hai. Jab tak tum ise 
+ explicitly stop nahi karte, yeh repeat hota rehta hai. -->
+
+
+
+ <!-- Practical Use Cases of setInterval():------------------------------------>
+
+<!-- Updating a clock on a webpage every second.
+Refreshing data from a server at regular intervals (like a stock price update).
+Slideshow or carousel where images change after fixed time intervals. -->
+
+
+<!-- Difference between setTimeout() and setInterval():------------------------->
+<!-- setTimeout() ek function ko ek baar specific time ke baad execute karta hai. 
+setInterval() ek function ko baar-baar specified time intervals ke baad execute karta rehta hai.-->
